@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,36 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+        // DISPLAY
+Route::get('/users', [UserController::class, 'index'])
+        ->middleware(['auth', 'verified'])
+        ->name('users');
+
+        // ADD
+Route::get('/users/add', [UserController::class, 'form'])
+        ->middleware(['auth', 'verified']);
+Route::post('/users/add', [UserController::class, 'store'])
+        ->middleware(['auth', 'verified']);
+ 
+        // UPDATE
+Route::get('/users/update/{id}', [UserController::class, 'show'])
+        ->middleware(['auth', 'verified']);
+Route::post('/users/update/{id}', [UserController::class, 'update'])
+        ->middleware(['auth', 'verified']);
+
+        
+Route::get('/users/password/{id}', [UserController::class, 'show1'])
+        ->middleware(['auth', 'verified']);
+Route::post('/users/password/{id}', [UserController::class, 'password'])
+        ->middleware(['auth', 'verified']);
+        
+        /* ------------ - DELETE USER ----------- */
+Route::get('/users/delete/{id}', [UserController::class, 'show2'])
+        ->middleware(['auth', 'verified']);
+Route::get('/users/delete/{id}', [UserController::class, 'destroy'])
+        ->middleware(['auth', 'verified']);
+        /* ------------------------------------- */
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
