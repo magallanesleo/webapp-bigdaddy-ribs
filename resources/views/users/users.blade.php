@@ -52,7 +52,7 @@
                                 </a>
 
                                 <a href="{{ url('users/delete/' . $user->id) }}">
-                                        <button class="rounded-full bg-orange-400 p-1 hover:bg-green-700" >Delete
+                                        <button class="rounded-full bg-red-600 p-1 hover:bg-green-700" >Delete
                                         </button>
                                 </a>
 

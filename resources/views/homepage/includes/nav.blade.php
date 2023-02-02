@@ -11,7 +11,8 @@
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Product</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact1">Contact</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#contact1">Contact</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link btn btn-primary" href="{{ url('/login') }}">Log in</a></li>
             </ul>
         </div>

@@ -21,7 +21,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
+                        <span class="fa-stack fa-4x" data-aos="fade-right">
                             <img src="assets/img/Dinein.png" width="130px">
                             <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>-->
                             <!--<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
@@ -281,7 +281,38 @@
             </div>
         </div> -->
         <!-- Contact-->
-        <section class="page-section" id="contact1">
+        <section class="page-section" id="contact">
+            <div class="row mt-3">
+                <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Contact</h2>
+                        <h3 class="section-subheading text-muted">Contact Information.</h3>
+                    </div>
+                    <div class="col">
+                        <div class="text-center">
+                            <img src="assets/img/mobilenumber.jpg" width="70px">
+                            <p class="lead"><h4>Mobile number</h4></p>
+                            <p class="lead" ><h4>+63 9917 8491 977</h4></p>
+                            <img src="assets/img/facebook.png" width="100px">
+                            <!-- <p class="lead" >Facebook</p> -->
+                            <p class="lead" >
+                                <h4>
+                                    <a href="https://www.facebook.com/bigdaddyhotelandconvention">
+                                    </a>Big Daddy Hotel & Convention</a>
+                                </h4>
+                            </p>
+                            <img src="assets/img/yahoo.png" width="100px">
+                            <!-- <p class="lead" >Yahoo mail</p> -->
+                            <p class="lead"><h4>bigdaddyhotel82914@yahoo.com</h4></p>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/product/map.png" class="rounded w-100">
+                </div>
+            </div>
+        </section>
+
+         <!-- <section class="page-section" id="contact1">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Location</h2>
@@ -291,8 +322,6 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <img src="assets/img/mobilenumber.jpg" width="130px">
-                            <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
                         </span>
                         <h4 class="my-3">+63 9917 8491 977</h4>
                         <p class="text-muted">Mobile number</p>
@@ -300,8 +329,6 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <img src="assets/img/facebook.png" width="130px">
-                            <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
                         </span>
                         <h4 class="my-3">Big Daddy Hotel & Convention </h4>
                         <p class="text-muted">Facebook</p>
@@ -309,15 +336,13 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <img src="assets/img/yahoo.png" width="150px">
-                            <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            //<i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
                         </span>
                         <h4 class="my-3">bigdaddyhotel82914@yahoo.com</h4>
                         <p class="text-muted">Yahoo mail</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>  -->
         
         @include('homepage.includes.footer')
 

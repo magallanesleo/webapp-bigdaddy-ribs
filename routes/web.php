@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,10 +24,34 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-        // DISPLAY
+        // DISPLAY USERS
 Route::get('/users', [UserController::class, 'index'])
         ->middleware(['auth', 'verified'])
         ->name('users');
+
+Route::get('/announcement', [AnnouncementController::class, 'index'])
+        ->middleware(['auth', 'verified'])
+        ->name('announcement');
+
+        //Add Announcement
+Route::get('/announcement/add', [AnnouncementController::class, 'form1'])
+        ->middleware(['auth', 'verified']);
+Route::post('/announcement/add', [AnnouncementController::class, 'store'])
+        ->middleware(['auth', 'verified']);
+
+        //Update Announcement
+Route::get('/announcement/update/{id}', [UserController::class, 'show'])
+        ->middleware(['auth', 'verified']);
+Route::post('/announcement/update/{id}', [UserController::class, 'update'])
+        ->middleware(['auth', 'verified']);
+
+        //Delete Announcement
+Route::get('/announcement/delete/{id}', [AnnouncementController::class, 'show2'])
+        ->middleware(['auth', 'verified']);
+Route::get('/announcement/delete/{id}', [AnnouncementController::class, 'destroy'])
+        ->middleware(['auth', 'verified']);
+
+
 
         // ADD
 Route::get('/users/add', [UserController::class, 'form'])

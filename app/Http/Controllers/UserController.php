@@ -49,6 +49,7 @@ class UserController extends Controller
     }
     
 
+    // Update 
     public function show($id)
     {
         $user = User::find($id);

@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Big Daddy ') }}</title>
+        <title>Big Daddy Hotel and Restaurant</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/daddy2.png" width="98px" />
+
+        <!-- <title>{{ config('app.name', 'Big Daddy ') }}</title> -->
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
